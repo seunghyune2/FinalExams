@@ -1,10 +1,31 @@
 from flask import Flask,render_template ,request
-from hello import money_pung
+from hello import money_pung,idpw_check
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello, World!'
+    return render_template("main.html")
+
+@app.route('/signup', methods = ['GET' , 'POST'])
+def signup():
+    if request.method == 'GET':
+        return render_template("signup.html")
+    else:
+        email = request.form['email']
+        pswd = request.form['pswd']
+        username = request.form['username']
+        return "{}</br>{}</br>{}</br> 회원정보".format(email,pswd,username)
+
+@app.route('/signin', methods = ['GET' , 'POST'])
+def signin():
+    if request.method == 'GET':
+        return render_template("signin.html")
+    else:
+        email = request.form['email']
+        pswd = request.form['pswd']
+        #이메일 패스워드 체크
+        msg = idpw_check(email,pswd)
+        return "{}</br>{}</br>{}</br>".format(email,pswd,msg)
 
 @app.route('/money')
 def money():
