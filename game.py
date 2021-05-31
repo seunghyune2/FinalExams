@@ -19,5 +19,5 @@ m = input_money()
 print("당신의 돈은 {}원".format(m))			
 # 그 돈을 넣으면 3배로 뻥튀기 해주는 기능			
 input("수리 수리 마수리~~ 얍!!(엔터)")			
-# 뻥튀기 된 돈을 출력			
+# 뻥튀기 된 돈을 출력			fdsfdfdsf
 print("당신의 돈은 {}원".format(money_pung(m)))			
