@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>돈뻥 사이트</title>
+  <title>보여줘</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-sm bg-light">
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -32,16 +31,15 @@
     <a class="nav-link" href="/signup">회원가입</a>
     </li>
     {% endif %}
- 
+  
 
   </ul>
 </nav>
-<br>
+<div class="container">
+<h2>Show Me The Money</h2>
 
-<div class="container-fluid">
-  <h3>돈뻥 사이트</h3>
-  <p>돈뻥 클릭 하세요~~ 놀라운 일이 벌어집니다.</p>
+<p>당신의 능력을 보여줘~ 얍<br>
+<b>{{ money }}</b>원 드립니다</p>
 </div>
-
 </body>
 </html>
