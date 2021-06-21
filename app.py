@@ -78,5 +78,5 @@ def showmoney():
 def hellohtml():
     return render_template("hello.html")
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#   app.run()

@@ -1,9 +1,9 @@
 import pymysql
 
 def dbcon():
-    return pymysql.connect(host='127.0.0.1',
-                   user='root', password='1234',
-                   db='ddb', charset='utf8')
+    return pymysql.connect(host='seunghyune.mysql.pythonanywhere-services.com'
+                   user='seunghyune', password='1234qwer',
+                   db='seunghyune$mydb', charset='utf8')
 
 def insert_member(email, pw, name):
     try:
